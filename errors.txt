@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 29: choice menuitem expects a non-empty block.
+    "Пойти за огурцами":
+                        ^
+
+Ren'Py Version: Ren'Py 7.0.0.196
+Fri Jul 20 21:51:31 2018

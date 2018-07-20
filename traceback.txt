@@ -1,0 +1,24 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+IOError: [Errno 22] Invalid argument
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "C:\Users\artyo\Desktop\renpy-7.0.0-sdk\renpy\bootstrap.py", line 306, in bootstrap
+    renpy.main.main()
+  File "C:\Users\artyo\Desktop\renpy-7.0.0-sdk\renpy\main.py", line 326, in main
+    renpy.exports.load_module("tl/None/common")
+  File "C:\Users\artyo\Desktop\renpy-7.0.0-sdk\renpy\exports.py", line 2331, in load_module
+    initcode = renpy.game.script.load_module(name)
+  File "C:\Users\artyo\Desktop\renpy-7.0.0-sdk\renpy\script.py", line 289, in load_module
+    self.load_appropriate_file(".rpymc", ".rpym", dir, fn, initcode)
+  File "C:\Users\artyo\Desktop\renpy-7.0.0-sdk\renpy\script.py", line 689, in load_appropriate_file
+    rpydigest = hashlib.md5(f.read()).digest()
+IOError: [Errno 22] Invalid argument
+
+Windows-8-6.2.9200
+Ren'Py 7.0.0.196
+ 
+Fri Jul 20 21:40:38 2018
