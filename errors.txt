@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 29: choice menuitem expects a non-empty block.
-    "Пойти за огурцами":
-                        ^
+File "game/script.rpy", line 37: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
+    "Ты споткулся об кота"
+    ^
+
+File "game/script.rpy", line 42: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
+    me "Эх, тяжело будет"
+    ^
 
 Ren'Py Version: Ren'Py 7.0.0.196
-Fri Jul 20 21:51:31 2018
+Fri Jul 20 23:19:23 2018

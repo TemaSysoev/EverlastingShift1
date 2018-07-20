@@ -1,24 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-IOError: [Errno 22] Invalid argument
+  File "game/script.rpy", line 35, in script
+    $ mood = false
+  File "game/script.rpy", line 35, in <module>
+    $ mood = false
+NameError: name 'false' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\artyo\Desktop\renpy-7.0.0-sdk\renpy\bootstrap.py", line 306, in bootstrap
-    renpy.main.main()
-  File "C:\Users\artyo\Desktop\renpy-7.0.0-sdk\renpy\main.py", line 326, in main
-    renpy.exports.load_module("tl/None/common")
-  File "C:\Users\artyo\Desktop\renpy-7.0.0-sdk\renpy\exports.py", line 2331, in load_module
-    initcode = renpy.game.script.load_module(name)
-  File "C:\Users\artyo\Desktop\renpy-7.0.0-sdk\renpy\script.py", line 289, in load_module
-    self.load_appropriate_file(".rpymc", ".rpym", dir, fn, initcode)
-  File "C:\Users\artyo\Desktop\renpy-7.0.0-sdk\renpy\script.py", line 689, in load_appropriate_file
-    rpydigest = hashlib.md5(f.read()).digest()
-IOError: [Errno 22] Invalid argument
+  File "game/script.rpy", line 35, in script
+    $ mood = false
+  File "C:\Users\artyo\Desktop\renpy-7.0.0-sdk\renpy\ast.py", line 862, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\artyo\Desktop\renpy-7.0.0-sdk\renpy\python.py", line 1912, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/script.rpy", line 35, in <module>
+    $ mood = false
+NameError: name 'false' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 7.0.0.196
- 
-Fri Jul 20 21:40:38 2018
+Everlasting shift (vol. 1) 1.0
+Fri Jul 20 23:20:38 2018

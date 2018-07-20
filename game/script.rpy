@@ -4,7 +4,8 @@
 # name of the character.
 
 define me = Character("Иван")
-
+default mood = False
+default health = True
 # The game starts here.
 
 label start:
@@ -31,9 +32,13 @@ label start:
         "Забить":
             jump notCrash
     label crash:
+        $ mood = False
+        $ health = True
         "Ты споткулся об кота"
         "Настроение испортилось, но, найдя огурцы, ты вылечил голову"
     label notCrash:
+        $ mood = False 
+        $ health = False
         me "Эх, тяжело будет"
     # This ends the game.
 
